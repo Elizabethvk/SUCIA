@@ -1,0 +1,60 @@
+body {
+    background-color: wheat;
+    color: #A0522D;
+    text-align: justify;
+    font-family: 'Arial';
+}
+
+h1 {
+    text-align: center;
+}
+
+h1, h3 {
+    background-color: white;
+}
+
+p {
+    margin: 2cm, 0, 2cm, 0;    
+}
+
+li {
+    margin: 1.3cm, 0, 2cm, 0;
+}
+
+p i {
+    color: red;
+}
+
+/* Style by id */
+#area-triangle {
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    color: red;
+    font-size: 28px;
+}
+
+/* Style by class */
+
+.area {
+    border: ridge;
+    border-color: red;
+    border-radius: 2px;
+
+    /* Alternatively -> border: ridge red 2px;*/
+}
+
+[background] {
+    background-color: yellow;
+}
+
+a:visited {
+    color: turquoise;
+}
+
+a:link {
+    color: yellow;
+}
+
+h1:hover {
+    color: blueviolet;
+}
