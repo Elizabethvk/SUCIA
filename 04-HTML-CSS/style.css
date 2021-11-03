@@ -1,0 +1,92 @@
+body {
+    background-color: #AD9C84;
+    text-align: justify;
+    color: #1A4551;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+ul {
+    text-align: center;
+    margin: 2em, 0, 3em, 0;
+    padding: 20px;
+    border-bottom: solid #3690AB 1px;
+}
+
+li {
+    background-color: rgba(135,206,235,1.0);
+    display: inline;
+    padding: 5px 10px;
+    margin: 10px;
+    text-align: center;
+    
+}
+
+li:hover {
+    background-color: #AD9C84;
+}
+
+div.theorem {
+    background-color: #FFFBF5;
+    color: #42B0D1;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    border-left: solid rgba(135,206,235,1.0) 10px;
+    border-right: solid rgba(135,206,235,1.0) 10px;
+    padding: 5px 2px;
+    margin: 0 10% 0 10%;
+    /* margin-right: 10px; */
+    /* margin-left: 5px; */
+    text-align: center;
+}
+
+div.formula {
+    text-align: center;
+    font-size: 16pt;
+    font-weight: bold;
+}
+
+p b {
+    font-size: 15pt;
+}
+
+h1 {
+    color: #3690AB;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+a:link {
+    text-decoration: none;
+    color: #AD9C84;
+}
+
+a:visited {
+    color: #3690AB;
+}
+
+a:hover {
+    color:#FFFFFF;
+}
+
+img {
+    position: relative;
+    left: 40%;
+    top: 20px;
+    margin-bottom: 30px;
+}
+
+.pic-text {
+    text-align: center;
+    font-family: serif;
+    font-size: small;
+    font-style: italic;
+}
+
+div.page {
+    border: none;
+    width: 1000px;
+    background-color: antiquewhite;
+    margin: 1em auto;
+    padding: 1em;
+}

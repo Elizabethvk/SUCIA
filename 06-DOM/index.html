@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="СУИКА упр. 6">
+        <meta name="keywords" content="SUIKA, СУИКА, HTML5">
+        <meta name="author" content="Elizabeth VK">
+        <title> Упражнение 6 </title>
+
+        <script>
+            function calc() {
+                var n1 = document.getElementById('name1').value;
+                var n2 = document.getElementById('name2').value;
+                document.getElementById('resN').innerHTML = "Настоящата възраст на " + n1 + " " + n2 + " e: ";
+            
+                var currD = new Date();
+
+                var year = Number(document.getElementById('year').value);
+
+                if (n1.length > 0 && n2.length > 0 ) {
+                    if (year < 999|| year > currD.getFullYear()) {
+                        document.getElementById("res").innerHTML = "Въвели сте неточна година! :(";
+                    }
+                    else {
+                        document.getElementById("res").innerHTML = currD.getFullYear() - year + " " + " години";
+                    }
+                }
+                else {
+                    document.getElementById("res").innerHTML = "Въведете име и фамилия";
+                }
+            }
+
+            function pickaDay() {
+                var e = document.getElementById('list').value;
+                document.getElementById('day').innerHTML = "You fighter bruh is: " + e;
+            }
+        </script>
+
+        <style>
+            
+        </style>
+
+    </head>
+
+    <body>
+        <div class="page">
+            <h3> Съдържание на текстово поле </h3>
+            <p> Въведете име: </p>
+            <input type="text" id="name1" value="" size="10">
+            <p> Въведете фамилия: </p>
+            <input type="text" id="name2" value="" size="10">
+            <p> Въведете година на раждане: </p>
+            <input type="text" id="year" value="" size="3">
+
+            <p id="resN"></p>
+            <span id="res"></span>
+
+            <button onclick="calc()">Изчисли възрастта!</button>
+            
+
+
+            <h3> Съдържание на списък </h3>
+
+            <p> Choose your fighter za natalna karta: </p>
+
+            <select id="list" onchange="pickaDay()">
+                <option value="Monday"> Monday </option>
+                <option value="Tuesday"> Tuesday </option>
+                <option value="Wednesday"> Wednesday </option>
+                <option value="Thursday"> Thursday </option>
+                <option value="Friday"> Friday </option>
+                <option value="Saturday"> Saturday </option>
+                <option value="Sunday"> Sunday AYYY </option>
+            </select>
+
+            <span id="day"></span>
+
+        </div>
+    </body>
+
+
+</html>
